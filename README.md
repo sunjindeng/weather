@@ -1,18 +1,18 @@
-##Weather
+## Weather
 基于 高德开放平台 的 PHP 天气信息组件。
 
-##安装
+## 安装
 $ composer require overtrue/weather -vvv
-##配置
+## 配置
 在使用本扩展之前，你需要去 高德开放平台 注册账号，然后创建应用，获取应用的 API Key。
 
-##使用
+## 使用
 use Overtrue\Weather\Weather;
 
 $key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxx';
 
 $weather = new Weather($key);
-##获取实时天气
+## 获取实时天气
 $response = $weather->getWeather('深圳');
 示例：
 
@@ -170,7 +170,7 @@ WEATHER_API_KEY=xxxxxxxxxxxxxxxxxxxxx
     .
     .
 Copy
-##参考
+## 参考
 高德开放平台天气接口
 License
 MIT
