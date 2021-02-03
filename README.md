@@ -15,6 +15,7 @@ $weather = new Weather($key);
 ## 获取实时天气
 $response = $weather->getWeather('深圳');
 示例：
+```
 
 {
     "status": "1",
@@ -128,7 +129,8 @@ $response = $weather->getWeather('深圳', 'all', 'xml');
         </live>
     </lives>
 </response>
-参数说明
+```
+### 参数说明
     array|string getWeather(string $city, string $type = 'base', string $format = 'json')
     $city - 城市名，比如：“深圳”；
     $type - 返回内容类型：base: 返回实况天气 / all: 返回预报天气；
@@ -147,7 +149,7 @@ $response = $weather->getWeather('深圳', 'all', 'xml');
 WEATHER_API_KEY=xxxxxxxxxxxxxxxxxxxxx
 可以用两种方式来获取 Overtrue\Weather\Weather 实例：
 
-方法参数注入
+### 方法参数注入
     .
     .
     .
@@ -158,7 +160,7 @@ WEATHER_API_KEY=xxxxxxxxxxxxxxxxxxxxx
     .
     .
     .
-服务名访问
+### 服务名访问
     .
     .
     .
@@ -171,6 +173,4 @@ WEATHER_API_KEY=xxxxxxxxxxxxxxxxxxxxx
     .
 Copy
 ## 参考
-高德开放平台天气接口
-License
-MIT
+[高德开放平台天气接口](https://lbs.amap.com/api/webservice/guide/api/weatherinfo/)
