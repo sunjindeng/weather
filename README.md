@@ -7,11 +7,13 @@ $ composer require sunjindeng/weather:dev-master
 在使用本扩展之前，你需要去 高德开放平台 注册账号，然后创建应用，获取应用的 API Key。
 
 ## 使用
+```
 use Sunjindeng\Weather\Weather;
 
 $key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxx';
 
 $weather = new Weather($key);
+```
 ## 获取实时天气
 $response = $weather->getWeather('深圳');
 示例：
@@ -36,10 +38,13 @@ $response = $weather->getWeather('深圳');
         }
     ]
 }
-##获取近期天气预报
+```
+## 获取近期天气预报
+```
 $response = $weather->getWeather('深圳', 'all');
+```
 示例：
-
+```
 {
     "status": "1", 
     "count": "1", 
@@ -104,12 +109,16 @@ $response = $weather->getWeather('深圳', 'all');
         }
     ]
 }
-##获取 XML 格式返回值
+```
+### 获取 XML 格式返回值
 第三个参数为返回值类型，可选 json 与 xml，默认 json：
 
+```
 $response = $weather->getWeather('深圳', 'all', 'xml');
-示例：
 
+```
+### 示例：
+```
 <response>
     <status>1</status>
     <count>1</count>
