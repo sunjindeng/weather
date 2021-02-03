@@ -1,0 +1,20 @@
+{
+    "name": "sunjindeng/weather",
+    "description": "A weather SDK",
+    "license": "MIT",
+    "require": {
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sunjindeng\\Weather\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sunjindeng\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
